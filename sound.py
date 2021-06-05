@@ -24,9 +24,12 @@ def job(a):
 
         if button.is_pressed:
             a = 1;
+
+alrm = input("alrm time in 24 hrs format(%H:%M:%S):)
+
 while True:
     now = datetime.now()
     current_time = now.strftime("%H:%M:%S")
-    if current_time=="07:15:00": #alarm time
+    if current_time==alrm: #alarm time
         job(0)
 
